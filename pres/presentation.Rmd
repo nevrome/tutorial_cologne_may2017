@@ -1,0 +1,56 @@
+---
+title: "recexcavAAR and far beyond..."
+subtitle: "Anregungen rund um R, DataScience und Archäologie"
+author: "Clemens Schmid"
+date: "17. Mai 2017"
+fontsize: 9pt
+output:
+  beamer_presentation:
+    theme: "metropolis"
+fig_caption: yes
+---
+
+# Vorüberlegungen
+
+## Tutorial
+
+\begin{columns}
+\begin{column}{0.4\textwidth}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.25]{images/tree.png}
+\caption{Inhaltsbaum}
+\end{figure}
+
+\end{column}
+\begin{column}{0.5\textwidth}
+
+\begin{itemize}  
+  \item recexcavAAR
+  \item 3D plots in R 
+  \item R Pakete 
+  \item RCPP 
+  \item tidyverse
+  \item sf - simple features
+\end{itemize}
+
+\begin{quote}
+A step to help you slow down - put your fork/spoon down between 
+bites and take a sip of water before picking them up for the next bite. 
+
+-- reddit user \textbf{angelforhirex} in einem Thread zum Thema Abnehmen
+\end{quote}
+
+\end{column}
+\end{columns}
+
+# recexcavAAR
+
+# R Pakete
+
+# tidyverse
+
+# RCPP 
+
+# sf - simple features
