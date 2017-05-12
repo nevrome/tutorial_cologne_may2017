@@ -10,8 +10,6 @@ output:
 fig_caption: yes
 ---
 
-# Vorüberlegungen
-
 ## Tutorial
 
 \begin{columns}
@@ -26,28 +24,41 @@ fig_caption: yes
 \end{column}
 \begin{column}{0.5\textwidth}
 
-\begin{itemize}  
+\begin{itemize}
+  \item R Pakete
+  \item 3D plots in R
   \item recexcavAAR
-  \item 3D plots in R 
-  \item R Pakete 
-  \item RCPP 
+  \item RCPP
   \item tidyverse
   \item sf - simple features
 \end{itemize}
 
 \begin{quote}
-A step to help you slow down - put your fork/spoon down between 
-bites and take a sip of water before picking them up for the next bite. 
+A step to help you slow down - put your fork/spoon down between bites and take a sip of water before picking them up for the next bite. 
 
--- reddit user \textbf{angelforhirex} in einem Thread zum Thema Abnehmen
+-- reddit user \textbf{angelforhirex} im Thread \textbf{I want to learn how to eat smaller portions}
 \end{quote}
 
 \end{column}
 \end{columns}
 
+# 3D plots in R
+
+## 3D plots in R
+
+## 3D plots in R
+
 # recexcavAAR
 
+## recexcavAAR
+
+## recexcavAAR
+
 # R Pakete
+
+## R Pakete
+
+## R Pakete
 
 # tidyverse
 
