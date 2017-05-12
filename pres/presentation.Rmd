@@ -4,6 +4,8 @@ subtitle: "Anregungen rund um R, DataScience und Archäologie"
 author: "Clemens Schmid"
 date: "17. Mai 2017"
 fontsize: 9pt
+header-includes:
+   - \usepackage{menukeys}
 output:
   beamer_presentation:
     theme: "metropolis"
@@ -28,25 +30,110 @@ fig_caption: yes
   \item R Pakete
   \item 3D plots in R
   \item recexcavAAR
-  \item RCPP
   \item tidyverse
-  \item sf - simple features
+  \item Reports
 \end{itemize}
 
 \begin{quote}
 A step to help you slow down - put your fork/spoon down between bites and take a sip of water before picking them up for the next bite. 
 
--- reddit user \textbf{angelforhirex} im Thread \textbf{I want to learn how to eat smaller portions}
+-- reddit user \textbf{angelforhirex} im Thread "I want to learn how to eat smaller portions"
 \end{quote}
 
 \end{column}
 \end{columns}
 
+# R Pakete
+
+## R Pakete
+
+http://r-pkgs.had.co.nz/
+
+## R Pakete
+
+1. Paket anlegen
+
+```{r, eval=FALSE}
+devtools::create("~/expack")
+```
+
+2. RStudio: In das entstandene Projekt wechseln
+
+3. Paket bauen und installieren: \keys{\ctrl + \shift + B}
+
+```{r, eval=FALSE}
+devtools::build()
+devtools::install()
+library(expack)
+```
+
+4. Fleischbeschau!
+
+```{r, eval=FALSE}
+help(package="expack")
+```
+
+## R Pakete
+
+5. Beispieldaten schaufeln 
+
+https://github.com/nevrome/tutorial_cologne_may2017/tree/master/data
+
+Alles von hier nach \emph{~/expack/data-raw/}
+
 # 3D plots in R
 
 ## 3D plots in R
 
+Graphic Engines vs. Javascript
+
+rgl <-> plotly 
+
 ## 3D plots in R
+
+1. neues R-Skript \emph{~/expack/R/dreiD.R} anlegen
+
+2. coole Funktion schreiben
+
+```{r, eval=FALSE, size = "tiny"}
+coolplot <- function(points){
+  rgl::plot3d(
+    points$x, points$y, points$z,
+    type = "p", size = 10,
+    xlab = "x", ylab = "y", zlab = "z",
+    col = "darkgreen"
+  )
+}
+```
+
+3. Namen der Funktion `coolplot` exportieren, indem man \emph{~/expack/NAMESPACE} editiert
+
+```{NAMESPACE}
+export(coolplot)
+```
+
+## 3D plots in R
+
+4. Paket \textbf{rgl} als Voraussetzung des Pakets definieren, indem man \emph{~/expack/DESCRIPTION} editiert
+
+```{dcf}
+...
+Description: What the package does (one paragraph).
+Imports:
+  rgl (>= 0.98.1)
+Depends: R (>= 3.3.3)
+...
+```
+
+5. Paket neu bauen: \keys{\ctrl + \shift + B}
+
+6. Ausprobieren!
+
+```{r, eval=FALSE}
+test <- data.frame(x = c(1,2), y = c(1,2), z = c(2,1))
+
+coolplot(test)
+```
 
 # recexcavAAR
 
@@ -54,14 +141,32 @@ A step to help you slow down - put your fork/spoon down between bites and take a
 
 ## recexcavAAR
 
-# R Pakete
-
-## R Pakete
-
-## R Pakete
-
 # tidyverse
 
-# RCPP 
+## tidyverse
 
-# sf - simple features
+## tidyverse
+
+# Reports 
+
+## Reports
+
+## Reports
+
+# Abschließende Gedanken
+
+## Abschließende Gedanken
+
+* Das ist **kein** produktionsfertiges R-Paket. Wir haben einige wichtige Aspekte ausgelassen: 
+    * Dokumentation!
+    * korrekte Datenimplementierung
+    * Tests
+    * ...
+* Aber: Wir haben einige coole Zusammenhänge berührt!
+    * Paketentwicklung
+    * 3D plots
+    * **tidyverse**
+    * RMarkdown
+* recexcavAAR, mortAAR, quantAAR... **ISAAK** ist offen für externe Mitarbeit!
+
+https://isaakiel.github.io/
