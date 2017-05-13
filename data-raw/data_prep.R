@@ -19,9 +19,17 @@ Nprofile <- jpeg::readJPEG(
 save(Nprofile, file = "data/Nprofile.rda")
 #save(Nprofile, file = "../../expack/data/Nprofile.rda")
 
-# sherd positions
+# Nprofile_corners 
 Nprofile_corners <- read.csv(
   "data-raw/Nprofile_corners.txt"
 )
 save(Nprofile_corners, file = "data/Nprofile_corners.rda")
-save(Nprofile_corners, file = "../../expack/data/Nprofile_corners.rda")
+#save(Nprofile_corners, file = "../../expack/data/Nprofile_corners.rda")
+
+# Nivellement measurements
+nivellement <- read.csv(
+  "data-raw/nivellement.txt"
+)
+save(nivellement, file = "data/nivellement.rda")
+#save(nivellement, file = "../../expack/data/nivellement.rda")
+
