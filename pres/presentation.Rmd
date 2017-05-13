@@ -77,9 +77,20 @@ help(package="expack")
 
 5. Beispieldaten schaufeln 
 
+Alles von 
+
 https://github.com/nevrome/tutorial_cologne_may2017/tree/master/data
 
-Alles von hier nach \emph{~/expack/data-raw/}
+nach \emph{home/user/expack/data/}
+
+6. Paket bauen: \keys{\ctrl + \shift + B}
+
+7. Beispieldaten ansehen
+
+```{r, eval=FALSE}
+trench
+
+```
 
 # 3D plots in R
 
@@ -96,12 +107,12 @@ rgl <-> plotly
 2. coole Funktion schreiben
 
 ```{r, eval=FALSE, size = "tiny"}
-coolplot <- function(points){
+coolplot <- function(points_df, type = "p"){
   rgl::plot3d(
-    points$x, points$y, points$z,
-    type = "p", size = 10,
+    points_df$x, points_df$y, points_df$z,
+    type = type,
     xlab = "x", ylab = "y", zlab = "z",
-    col = "darkgreen"
+    ...
   )
 }
 ```
@@ -130,9 +141,37 @@ Depends: R (>= 3.3.3)
 6. Ausprobieren!
 
 ```{r, eval=FALSE}
-test <- data.frame(x = c(1,2), y = c(1,2), z = c(2,1))
+coolplot(trench, type = "l")
+coolplot(sherds, type = "p", add = TRUE)
+```
 
-coolplot(test)
+## 3D plots in R
+
+7. noch eine coole Funktion schreiben
+
+```{r, eval=FALSE}
+coolpicture <- function(image, position) {
+  rgl::show2d( { par(mar = rep(0, 4))
+                 plot( 0:1, 0:1, type = "n", ann = FALSE,
+                       axes = FALSE, xaxs = "i", yaxs = "i" )
+                 rasterImage(image, 0, 0, 1, 1)
+                },
+    x = position$x, y = position$y, z = position$z
+  )
+}
+```
+
+8. Namen der neuen Funktion exportieren
+
+```{NAMESPACE}
+export(coolpicture)
+```
+
+9. Ausprobieren!
+
+```{r, eval=FALSE}
+coolplot(trench, type = "l")
+coolpicture(Nprofile, Nprofile_corners)
 ```
 
 # recexcavAAR
