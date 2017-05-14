@@ -146,7 +146,7 @@ coolplot <- function(points_df, type = "p", ...){
 }
 ```
 
-3. Namen der Funktion `coolplot` exportieren, indem man \emph{~/expack/NAMESPACE} editiert
+3. Namen der Funktion `coolplot` exportieren, indem man \emph{home/user/expack/NAMESPACE} editiert
 
 ```{}
 export(coolplot)
@@ -196,7 +196,7 @@ coolpicture <- function(image, position) {
 export(coolpicture)
 ```
 
-9. Ausprobieren!
+9. Bauen (\keys{\ctrl + \shift + B}) und Ausprobieren!
 
 ```{r, eval=FALSE}
 coolplot(trench, type = "l")
@@ -267,7 +267,7 @@ plot(sherds$x, sherds$z)
 
 ## Reports
 
-8. 3D Plot
+8. 3D Plot (und anschließend rendern: \keys{\ctrl + \shift + K})
 
 `` ```{r, echo=FALSE, results="hide"} ``
 ```{r, eval=FALSE}
@@ -320,9 +320,10 @@ surf <- recexcavAAR::kriglist(
 sherds_pos <- recexcavAAR::posdec(sherds[1:3], surf)
 ```
 `` ``` ``
+
 ## recexcavAAR
 
-3. 3D Plot
+3. 3D Plot (... und \keys{\ctrl + \shift + K})
 
 `` ```{r} ``
 ```{r, eval=FALSE}
@@ -373,7 +374,22 @@ Speziellere Pakete, die der selben Philosophie folgen: forcats, stringr, readxl,
 
 ## tidyverse
 
+1. neues R Skript \emph{home/user/expack/playground/sherds.R} zum Spielen anlegen
 
+2. Skript der *.Rbuildignore* hinzufügen, um es vom Buildprozess des Pakets auszuklammern
+
+```{r, eval=FALSE}
+devtools::use_build_ignore("playground/sherds.R")
+```
+
+3. Bereits bekannten Code kopieren
+
+```{r, eval=FALSE}
+surf <- recexcavAAR::kriglist(
+  list(nivellement1, nivellement2), lags = 2
+)
+sherds_pos <- recexcavAAR::posdec(sherds[1:3], surf)
+```
 
 # Abschließende Gedanken
 
