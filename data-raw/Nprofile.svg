@@ -29,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="484.80201"
-     inkscape:cy="719.61298"
+     inkscape:cx="420.15225"
+     inkscape:cy="792.34396"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -58,16 +58,22 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="opacity:1;fill:#b08823;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.09228325;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:#b08823;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:7.46149254;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4485"
        width="500"
-       height="200"
+       height="300"
        x="-128.79822"
-       y="26.048702" />
+       y="-73.951294" />
     <path
        style="fill:#84662d;fill-rule:evenodd;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
        d="m -128.79822,226.0487 v -81.39233 c 0,0 117.038361,-20.31249 148.041626,-11.75986 31.003265,8.55262 67.351919,11.75986 97.820644,6.41447 30.46873,-5.34539 66.28284,-26.72696 95.68249,-24.05426 29.39965,2.6727 82.85355,6.41447 107.44234,12.82894 24.58881,6.41447 51.01291,-22.98518 51.01291,-22.98518 V 226.0487 h -500.00001"
        id="path4489"
        inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4484"
+       d="m 371.20179,-73.951294 -1e-5,63.218002 c 0,0 -63.04991,4.8108578 -94.05318,-3.741772 -31.00326,-8.55262 -106.90781,-8.018087 -137.37653,-2.672697 -30.46872,5.34539 -77.446991,0.790343 -106.907804,2.672698 -46.290794,2.957682 -82.319011,16.5707093 -106.907801,10.1562393 -24.58881,-6.4144753 -54.754685,-19.2434053 -54.754685,-19.2434053 l 0,-50.389065 h 500.00001"
+       style="fill:#614c2d;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="ccssssccc" />
   </g>
 </svg>
