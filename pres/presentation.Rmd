@@ -343,6 +343,21 @@ http://r4ds.had.co.nz/
 
 http://tidyverse.org/
 
+Das tidyverse ist eine **Sammlung von auf einander angepassten Paketen** für **Datenverarbeitung** und **Modellierung**, die zum **digitalen Standardwerkzeug** eines Archäologen gehören sollte. 
+
+|||
+|---|---|
+|**ggplot2:** | Daten visualisieren (plot 2.0) |
+|**tibble:**  | Daten verwalten (data.frame 2.0 **?**) |
+|**tidyr:**   | Datenlayout bereinigen |
+|**readr:**   | Daten einlesen (read.table 2.0 **?**) |
+|**dplyr:**   | Daten verarbeiten -> Perspektive data.frame |
+|**purrr:**   | Daten verarbeiten -> Perspektive vektor |
+
+Darüber hinaus gibt es weitere Pakete, die der selben Philosophie folgen aber speziellere Anwendungen haben: forcats, stringr, readxl, ...
+
+**magrittr** dient dabei dazu, Funktionen systematisch aneinander zu reihen.
+
 ## tidyverse
 
 
