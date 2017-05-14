@@ -53,8 +53,10 @@ A step to help you slow down - put your fork/spoon down between bites and take a
 R Development Core Team -- Writing R Extensions  
 https://cran.r-project.org/doc/manuals/r-release/R-exts.pdf
 
-Hadley Wickham -- R packages  
+**Hadley Wickham -- R packages**  
 http://r-pkgs.had.co.nz/
+
+\rule{\textwidth}{1pt}
 
 > Packages are the fundamental units of reproducible R code. They include reusable **R functions**, the **documentation** that describes how to use them, and **sample data**.
 >
@@ -109,14 +111,23 @@ trench
 
 ## 3D plots in R
 
-Javascript APIs: **plotly** & **rthreejs**  
-https://plot.ly/r/#3d-charts
-https://github.com/bwlewis/rthreejs
+JavaScript APIs: **plotly** & **rthreejs**  
+https://plot.ly/r/#3d-charts & https://github.com/bwlewis/rthreejs
 
 OpenGL API: **rgl**  
 https://cran.r-project.org/web/packages/rgl/vignettes/rgl.html
 
-Graphic Engines vs. Javascript
+\rule{\textwidth}{1pt}
+
+Für echte 3D plots gibt es in R im Augenblick zwei Optionen:  
+APIs zu JavaScript Rendering Bibliotheken und GPU APIs.
+
+Nur **rgl** besitzt einen **großen Funktionsumfang**, ist wegen der direkten GPU Nutzung über OpenGL lokal **perfomant** und kann gleichermaßen automatisch embedded JavaScript für **Web-Anwendungen** generieren. 
+
+\rule{\textwidth}{1pt}
+
+JavaScript Visualisierung mit R:  
+http://www.htmlwidgets.org/
 
 ## 3D plots in R
 
@@ -338,10 +349,12 @@ rglwidget()
 
 ## tidyverse
 
-Hadley Wickham - R for Data Science  
+Hadley Wickham -- R for Data Science  
 http://r4ds.had.co.nz/
 
 http://tidyverse.org/
+
+\rule{\textwidth}{1pt}
 
 Das tidyverse ist eine **Sammlung von auf einander angepassten Paketen** für **Datenverarbeitung** und **Modellierung**, die zum **digitalen Standardwerkzeug** eines Archäologen gehören sollte. 
 
@@ -354,7 +367,7 @@ Das tidyverse ist eine **Sammlung von auf einander angepassten Paketen** für **
 |**dplyr:**   | Daten verarbeiten -> Perspektive data.frame |
 |**purrr:**   | Daten verarbeiten -> Perspektive vektor |
 
-Darüber hinaus gibt es weitere Pakete, die der selben Philosophie folgen aber speziellere Anwendungen haben: forcats, stringr, readxl, ...
+Speziellere Pakete, die der selben Philosophie folgen: forcats, stringr, readxl, ...
 
 **magrittr** dient dabei dazu, Funktionen systematisch aneinander zu reihen.
 
