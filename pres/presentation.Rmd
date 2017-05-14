@@ -119,7 +119,7 @@ coolplot <- function(points_df, type = "p"){
 
 3. Namen der Funktion `coolplot` exportieren, indem man \emph{~/expack/NAMESPACE} editiert
 
-```{NAMESPACE}
+```{}
 export(coolplot)
 ```
 
@@ -127,7 +127,7 @@ export(coolplot)
 
 4. Paket \textbf{rgl} als Voraussetzung des Pakets definieren, indem man \emph{~/expack/DESCRIPTION} editiert
 
-```{dcf}
+```{}
 ...
 Description: What the package does (one paragraph).
 Imports:
@@ -163,7 +163,7 @@ coolpicture <- function(image, position) {
 
 8. Namen der neuen Funktion exportieren
 
-```{NAMESPACE}
+```{}
 export(coolpicture)
 ```
 
@@ -186,6 +186,71 @@ coolpicture(Nprofile, Nprofile_corners)
 devtools::use_vignette("recex")
 ```
 
+2. Vignette testweise rendern: \keys{\ctrl + \shift + K} 
+
+```{r, eval=FALSE}
+rmarkdown::render("vignettes/recex.Rmd")
+```
+
+3. Inhalt abgesehen vom Header (zwischen `---`) löschen
+
+4. Überschrift und Text anlegen
+
+```{}
+# Test!
+
+Das ist ein **aggressiver Test**. 
+
+> Testen soll stets aggressiv geschehen!
+> -- Clemens
+```
+
+## Reports
+
+5. R code chunks anlegen: `` ```{r} `` ... `` ``` `` 
+
+6. Chunks mit Leben füllen: Bibliotheken laden
+
+`` ```{r} ``
+```{r}
+library(expack)
+library(rgl)
+```
+`` ``` `` 
+
+7. 2D Plot
+
+`` ```{r} ``
+```{r, eval = FALSE}
+plot(sherds$x, sherds&z)
+```
+`` ``` `` 
+
+## Reports
+
+8. 3D Plot
+
+`` ```{r, echo=FALSE, results="hide"} ``
+```{r, eval=FALSE}
+# avoid plotting in X11 window
+open3d(useNULL = TRUE)
+```
+`` ``` `` 
+
+`` ```{r} ``
+```{r, eval=FALSE}
+coolplot(trench, type = "l")
+coolpicture(Nprofile, Nprofile_corners)
+coolplot(sherds, type = "p", add = TRUE, col = "red", size = 10)
+```
+`` ``` `` 
+
+`` ```{r, echo=FALSE} ``
+```{r, eval=FALSE}
+rglwidget()
+```
+`` ``` `` 
+
 # recexcavAAR
 
 ## recexcavAAR
@@ -194,7 +259,7 @@ devtools::use_vignette("recex")
 
 1. Paket \textbf{recexcavAAR} als Voraussetzung des Pakets definieren
 
-```{dcf, eval = FALSE}
+```{}
 Imports:
   rgl (>= 0.98.1),
 Suggests:
