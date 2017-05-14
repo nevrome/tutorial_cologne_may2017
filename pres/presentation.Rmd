@@ -1,6 +1,6 @@
 ---
 title: "recexcavAAR and far beyond..."
-subtitle: "Anregungen rund um R, DataScience und Archäologie"
+subtitle: "Anregungen rund um R, Data Science und Archäologie"
 author: "Clemens Schmid"
 date: "17. Mai 2017"
 fontsize: 9pt
@@ -44,11 +44,21 @@ A step to help you slow down - put your fork/spoon down between bites and take a
 \end{column}
 \end{columns}
 
+
+
 # R Pakete
 
 ## R Pakete
 
+R Development Core Team -- Writing R Extensions  
+https://cran.r-project.org/doc/manuals/r-release/R-exts.pdf
+
+Hadley Wickham -- R packages  
 http://r-pkgs.had.co.nz/
+
+> Packages are the fundamental units of reproducible R code. They include reusable **R functions**, the **documentation** that describes how to use them, and **sample data**.
+>
+> -- Hadley Wickham
 
 ## R Pakete
 
@@ -93,13 +103,20 @@ trench
 
 ```
 
+
+
 # 3D plots in R
 
 ## 3D plots in R
 
-Graphic Engines vs. Javascript
+Javascript APIs: **plotly** & **rthreejs**  
+https://plot.ly/r/#3d-charts
+https://github.com/bwlewis/rthreejs
 
-rgl <-> plotly 
+OpenGL API: **rgl**  
+https://cran.r-project.org/web/packages/rgl/vignettes/rgl.html
+
+Graphic Engines vs. Javascript
 
 ## 3D plots in R
 
@@ -175,9 +192,17 @@ coolplot(trench, type = "l")
 coolpicture(Nprofile, Nprofile_corners)
 ```
 
+
+
 # Reports 
 
 ## Reports
+
+Markdown Cheatsheet  
+http://commonmark.org/help/
+
+Rmarkdown  
+http://rmarkdown.rstudio.com/
 
 ## Reports
 
@@ -198,12 +223,12 @@ rmarkdown::render("vignettes/recex.Rmd")
 4. Überschrift und Text anlegen (\danger -- Leerzeilen!)
 
 ```{}
-# Test!
+# Space archaeology
 
-Das ist ein **aggressiver** Test. 
+The Kingdom of the Crystal Skull was a good movie.
 
-> Testen soll stets *aggressiv* geschehen!
-> -- Clemens
+> "RRRAARRWHHGWWR."
+> -- Chewbacca in *The Empire Strikes Back*
 
 ![](https://goo.gl/XOF2ce)
 ```
@@ -254,9 +279,14 @@ rglwidget()
 ```
 `` ``` `` 
 
+
 # recexcavAAR
 
 ## recexcavAAR
+
+https://github.com/ISAAKiel/recexcavAAR
+
+https://CRAN.R-project.org/package=recexcavAAR
 
 ## recexcavAAR
 
@@ -279,7 +309,6 @@ surf <- recexcavAAR::kriglist(
 sherds_pos <- recexcavAAR::posdec(sherds[1:3], surf)
 ```
 `` ``` ``
-
 ## recexcavAAR
 
 3. 3D Plot
@@ -303,18 +332,27 @@ rglwidget()
 ```
 `` ``` `` 
 
+
+
 # tidyverse
 
 ## tidyverse
 
+Hadley Wickham - R for Data Science  
+http://r4ds.had.co.nz/
+
+http://tidyverse.org/
+
 ## tidyverse
+
+
 
 # Abschließende Gedanken
 
 ## Abschließende Gedanken
 
 * Das ist **kein** produktionsfertiges R-Paket. Wir haben einige wichtige Aspekte ausgelassen: 
-    * Dokumentation!
+    * Dokumentation! (mit roxygen2)
     * korrekte Datenimplementierung
     * Tests
     * ...
