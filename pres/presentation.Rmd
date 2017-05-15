@@ -231,7 +231,7 @@ rmarkdown::render("vignettes/recex.Rmd")
 
 3. Inhalt abgesehen vom Header (zwischen `---`) löschen
 
-4. Überschrift und Text anlegen (\danger -- Leerzeilen!)
+4. Überschrift und Text anlegen (\danger\  Leerzeilen!)
 
 ```{}
 # Space archaeology
@@ -407,16 +407,18 @@ sherds_pos <- recexcavAAR::posdec(sherds[1:3], surf)
 
 ## Abschließende Gedanken
 
-* Das ist **kein** produktionsfertiges R-Paket. Wir haben einige wichtige Aspekte ausgelassen: 
-    * Dokumentation! (mit roxygen2)
+* \danger\  Das ist **kein** produktionsfertiges R-Paket. Wir haben einige essenzielle Aspekte ausgelassen: 
+    * Dokumentation! (z.B. mit roxygen2)
+    * Versionskontrolle (z.B. mit git)
     * korrekte Datenimplementierung
     * Tests
     * ...
 * Aber: Wir haben einige coole Zusammenhänge berührt!
     * Paketentwicklung
     * 3D plots
-    * **tidyverse**
     * RMarkdown
+    * recexcavAAR
+    * **tidyverse**
 * recexcavAAR, mortAAR, quantAAR... **ISAAK** ist offen für externe Mitarbeit!
 
 https://isaakiel.github.io/
