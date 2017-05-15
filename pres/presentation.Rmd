@@ -305,9 +305,11 @@ https://CRAN.R-project.org/package=recexcavAAR
 >
 > ...
 
-![recexcavAAR Timeline](images/history.png)
-
-
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.6]{images/history.png}
+\caption{Timeline recexcavAAR}
+\end{figure}
 
 ## recexcavAAR
 
