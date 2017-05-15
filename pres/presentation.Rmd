@@ -7,6 +7,9 @@ fontsize: 9pt
 header-includes:
    - \usepackage{menukeys}
    - \usepackage{fourier}
+   - \usepackage{fontawesome}
+   - \newcommand{\columnsbegin}{\begin{columns}}
+   - \newcommand{\columnsend}{\end{columns}}
 output:
   beamer_presentation:
     theme: "metropolis"
@@ -15,8 +18,8 @@ fig_caption: yes
 
 ## Tutorial
 
-\begin{columns}
-\begin{column}{0.4\textwidth}
+\columnsbegin
+\column{0.4\textwidth}
 
 \begin{figure}[h]
 \centering
@@ -24,8 +27,7 @@ fig_caption: yes
 \caption{Inhaltsbaum}
 \end{figure}
 
-\end{column}
-\begin{column}{0.5\textwidth}
+\column{0.5\textwidth}
 
 \begin{itemize}
   \item R Pakete
@@ -41,8 +43,7 @@ A step to help you slow down - put your fork/spoon down between bites and take a
 -- reddit user \textbf{angelforhirex} im Thread "I want to learn how to eat smaller portions"
 \end{quote}
 
-\end{column}
-\end{columns}
+\columnsend
 
 
 
@@ -64,6 +65,23 @@ http://r-pkgs.had.co.nz/
 
 ## R Pakete
 
+\columnsbegin
+\column{0.5\textwidth}
+
+\textbf{Windows ohne Rtools}
+
+1. RStudio: Ein neues Projekt beliebigen Namens anlegen
+
+2. Windows binaries für Paket expack herunterladen
+
+https://github.com/nevrome/tutorial_cologne_may2017/tree/master/expack
+
+3. RStudio: expack installieren (Packages > Install > Package Archive File)
+
+\column{0.5\textwidth}
+
+\textbf{Linux oder Windows mit Rtools}
+
 1. Paket anlegen
 
 ```{r, eval=FALSE}
@@ -72,7 +90,13 @@ devtools::create("~/expack")
 
 2. RStudio: In das entstandene Projekt wechseln
 
-3. Paket bauen und installieren: \keys{\ctrl + \shift + B}
+3. Beispieldaten schaufeln 
+
+https://github.com/nevrome/tutorial_cologne_may2017/tree/master/data
+
+\faFolderOpenO \emph{home/user/expack/data/}
+
+4. Paket bauen und installieren: \newline \keys{\ctrl + \shift + B}
 
 ```{r, eval=FALSE}
 devtools::build()
@@ -80,25 +104,17 @@ devtools::install()
 library(expack)
 ```
 
-4. Fleischbeschau!
+\columnsend
+
+## R Pakete
+
+5. Fleischbeschau!
 
 ```{r, eval=FALSE}
 help(package="expack")
 ```
 
-## R Pakete
-
-5. Beispieldaten schaufeln 
-
-Alles von 
-
-https://github.com/nevrome/tutorial_cologne_may2017/tree/master/data
-
-nach \emph{home/user/expack/data/}
-
-6. Paket bauen: \keys{\ctrl + \shift + B}
-
-7. Beispieldaten ansehen
+6. Beispieldaten ansehen
 
 ```{r, eval=FALSE}
 trench
