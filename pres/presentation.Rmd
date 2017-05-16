@@ -51,10 +51,10 @@ A step to help you slow down - put your fork/spoon down between bites and take a
 
 ## R Pakete
 
-R Development Core Team -- Writing R Extensions  
+\underline{R Development Core Team -- Writing R Extensions}  
 https://cran.r-project.org/doc/manuals/r-release/R-exts.pdf
 
-**Hadley Wickham -- R packages**  
+\underline{\textbf{Hadley Wickham -- R packages}}  
 http://r-pkgs.had.co.nz/
 
 \rule{\textwidth}{1pt}
@@ -133,14 +133,16 @@ trench
 install.packages(c("recexcavAAR", "rgl", "tidyverse"))
 ```
 
+
+
 # 3D plots in R
 
 ## 3D plots in R
 
-JavaScript APIs: **plotly** & **rthreejs**  
+\underline{JavaScript APIs: \textbf{plotly} \& \textbf{rthreejs}}  
 https://plot.ly/r/#3d-charts & https://github.com/bwlewis/rthreejs
 
-OpenGL API: **rgl**  
+\underline{OpenGL API: \textbf{rgl}}  
 https://cran.r-project.org/web/packages/rgl/vignettes/rgl.html
 
 \rule{\textwidth}{1pt}
@@ -152,7 +154,7 @@ Nur **rgl** besitzt einen **großen Funktionsumfang**, ist wegen der direkten GP
 
 \rule{\textwidth}{1pt}
 
-JavaScript Visualisierung mit R:  
+\underline{JavaScript Visualisierung mit R}  
 http://www.htmlwidgets.org/
 
 ## 3D plots in R
@@ -235,11 +237,21 @@ coolpicture(Nprofile, Nprofile_corners)
 
 ## Reports
 
-Markdown Cheatsheet  
+\underline{\textbf{R Markdown}}  
+http://rmarkdown.rstudio.com/
+
+\underline{Markdown Cheatsheet}  
 http://commonmark.org/help/
 
-Rmarkdown  
-http://rmarkdown.rstudio.com/
+\rule{\textwidth}{1pt}
+
+
+R Markdown ist ein Framework zur Erstellung von **daten- und analyseorientierter Texte, Websites und Präsentationen**
+
+- Sehr einfache Auszeichnungssprache Markdown
+- Verarbeitung von **R, Python und SQL-Code**
+- Integration von **Textverarbeitungswerkzeugen** (z.B. Referenzmanagement)
+- Output über vorimplementierte Parsingworkflows: \newline \textbf{PDF, HTML, Word-Dokumente, etc...}
 
 ## Reports
 
@@ -334,8 +346,10 @@ rglwidget()
 
 ## recexcavAAR
 
+\underline{recexcavAAR auf Github -- Entwicklungsumgebung}  
 https://github.com/ISAAKiel/recexcavAAR
 
+\underline{recexcavAAR auf CRAN}  
 https://CRAN.R-project.org/package=recexcavAAR
 
 > ...
@@ -346,7 +360,7 @@ https://CRAN.R-project.org/package=recexcavAAR
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.6]{images/history.png}
+\includegraphics[scale=0.52]{images/history.png}
 \caption{Timeline recexcavAAR}
 \end{figure}
 
@@ -360,9 +374,9 @@ https://CRAN.R-project.org/package=recexcavAAR
 
 **Vignettes** (Mai 2017)
 
-- [Semiautomatic spit attribution](https://isaakiel.github.io/recexcavAAR-vignette-1.html)
-- [Trench visualisation](https://isaakiel.github.io/recexcavAAR-vignette-2.html)
-- [Transforming coordinates](https://isaakiel.github.io/recexcavAAR-vignette-3.html)
+- [\faExternalLink\  Semiautomatic spit attribution](https://isaakiel.github.io/recexcavAAR-vignette-1.html)
+- [\faExternalLink\  Trench visualisation](https://isaakiel.github.io/recexcavAAR-vignette-2.html)
+- [\faExternalLink\  Transforming coordinates](https://isaakiel.github.io/recexcavAAR-vignette-3.html)
 
 **Meine Lieblingsfunktionen**
 
@@ -420,7 +434,7 @@ rglwidget()
 
 ## tidyverse
 
-Hadley Wickham -- R for Data Science  
+\underline{\textbf{Hadley Wickham -- R for Data Science}}  
 http://r4ds.had.co.nz/
 
 http://tidyverse.org/
