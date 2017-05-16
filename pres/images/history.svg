@@ -304,14 +304,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="431.43651"
-     inkscape:cy="899.86525"
+     inkscape:cx="404.61826"
+     inkscape:cy="967.18196"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1010"
-     inkscape:window-x="1920"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:snap-bbox="true"
@@ -334,7 +334,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -346,23 +346,23 @@
     <image
        sodipodi:absref="/home/clemens/Rstats/tutorial_cologne_may2017/pres/images/IMG_2524.JPG"
        xlink:href="IMG_2524.JPG"
-       clip-path="url(#clipPath10342)"
-       width="160.78622"
-       height="34.717911"
-       preserveAspectRatio="none"
-       id="image10339"
+       y="27.422613"
        x="25.426632"
-       y="27.422613" />
+       id="image10339"
+       preserveAspectRatio="none"
+       height="34.717911"
+       width="160.78622"
+       clip-path="url(#clipPath10342)" />
     <image
        sodipodi:absref="/home/clemens/Rstats/tutorial_cologne_may2017/pres/images/2015-03-01 11.54.19.jpg"
        xlink:href="2015-03-01 11.54.19.jpg"
-       clip-path="url(#clipPath10327)"
-       width="160.67862"
-       height="120.50894"
-       preserveAspectRatio="none"
-       id="image10264"
+       y="-21.407232"
        x="29.987915"
-       y="-21.407232" />
+       id="image10264"
+       preserveAspectRatio="none"
+       height="120.50894"
+       width="160.67862"
+       clip-path="url(#clipPath10327)" />
     <path
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#eb811b;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DiamondM);marker-end:url(#marker19704)"
        d="m 22.61198,28.977284 c 0,0 129.76839,-1e-6 148.38529,-1e-6 18.6169,0 18.6169,31.601071 0,31.601071 -21.2102,0 -109.867468,0.1328 -134.493168,0.05718 -18.616899,-0.05717 -18.616899,31.543891 -1e-6,31.543891 25.855561,0 127.326929,0.0178 134.493359,0"
@@ -390,7 +390,7 @@
          id="tspan5428"
          x="58.361988"
          y="25.846601"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332px">Marokko - Ifri El Baroud</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332px">Marokko - Ifri el Baroud</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
