@@ -55,7 +55,7 @@ A step to help you slow down - put your fork/spoon down between bites and take a
 https://cran.r-project.org/doc/manuals/r-release/R-exts.pdf
 
 \underline{Hadley Wickham -- \textbf{R packages}}  
-http://r-pkgs.had.co.nz/
+http://r-pkgs.had.co.nz
 
 \rule{\textwidth}{1pt}
 
@@ -72,7 +72,7 @@ http://r-pkgs.had.co.nz/
 
 \textcolor{black}{\textbf{1.}} RStudio: Ein neues Projekt \emph{\textasciitilde/expack} anlegen
 
-\textcolor{black}{\textbf{2.}} Windows binaries für Paket expack herunterladen
+\textcolor{black}{\textbf{2.}} Windows Binaries für Paket expack herunterladen
 
 https://github.com/nevrome/tutorial_cologne_may2017/tree/master/expack
 
@@ -101,7 +101,7 @@ devtools::create("~/expack")
 
 https://github.com/nevrome/tutorial_cologne_may2017/tree/master/data
 
-\faFolderOpenO \ \emph{\textasciitilde/expack/data/}
+\faFolderOpenO \ \emph{\textasciitilde/expack/data}
 
 \textcolor{red}{\textbf{4.}} Paket bauen, installieren und laden: \newline \keys{\ctrl + \shift + B}
 
@@ -156,7 +156,7 @@ Nur **rgl** besitzt einen **großen Funktionsumfang**, ist wegen der direkten GP
 \rule{\textwidth}{1pt}
 
 \underline{JavaScript Visualisierung mit R}  
-http://www.htmlwidgets.org/
+http://www.htmlwidgets.org
 
 ## 3D plots in R
 
@@ -259,9 +259,9 @@ R Markdown ist ein Framework zur Erstellung von **daten- und analyseorientierten
 \columnsbegin
 \column{0.5\textwidth}
 
-\textcolor{black}{\textbf{1.}} RStudio: Ein neues RMarkdown Dokument anlegen
+\textcolor{black}{\textbf{1.}} RStudio: Ein neues R Markdown Dokument anlegen
 
-File > New File > R Markdown > Document > HTML
+(File > New File > R Markdown > Document > HTML)
 
 \column{0.5\textwidth}
 
@@ -392,7 +392,7 @@ Suggests:
   recexcavAAR (>= 0.3.0)
 ```
 
-\textcolor{black}{\textbf{2.}} Kriging und Positionsbestimmung im RMarkdown Dokument hinzufügen
+\textcolor{black}{\textbf{2.}} Kriging und Positionsbestimmung im R Markdown Dokument hinzufügen
 
 `` ```{r} ``
 ```{r, eval=FALSE}
@@ -436,12 +436,12 @@ rglwidget()
 \column{0.5\textwidth}
 
 \underline{Hadley Wickham -- \textbf{R for Data Science}}  
-http://r4ds.had.co.nz/
+http://r4ds.had.co.nz
 
 \column{0.5\textwidth}
 
 \underline{Winston Chang -- \textbf{R Graphics Cookbook}}  
-http://www.cookbook-r.com/Graphs/
+http://www.cookbook-r.com/Graphs
 
 \columnsend
 
@@ -583,9 +583,9 @@ g + geom_abline(
 * **Aber:** Wir haben einige coole Zusammenhänge berührt!
     * Paketentwicklung
     * 3D plots
-    * RMarkdown
+    * R Markdown
     * recexcavAAR
     * **tidyverse**
 * recexcavAAR, mortAAR, quantAAR... **ISAAK** ist offen für externe Mitarbeit!
 
-https://isaakiel.github.io/
+https://isaakiel.github.io
