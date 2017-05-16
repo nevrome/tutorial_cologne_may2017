@@ -246,9 +246,9 @@ http://commonmark.org/help/
 \rule{\textwidth}{1pt}
 
 
-R Markdown ist ein Framework zur Erstellung von **daten- und analyseorientierter Texte, Websites und Präsentationen**
+R Markdown ist ein Framework zur Erstellung von **daten- und analyseorientierten Texten, Websites und Präsentationen**
 
-- Sehr einfache Auszeichnungssprache Markdown
+- Sehr einfache Auszeichnungssprache **Markdown**
 - Verarbeitung von **R, Python und SQL-Code**
 - Integration von **Textverarbeitungswerkzeugen** (z.B. Referenzmanagement)
 - Output über vorimplementierte Parsingworkflows: \newline \textbf{PDF, HTML, Word-Dokumente, etc...}
@@ -346,6 +346,20 @@ rglwidget()
 
 ## recexcavAAR
 
+> ...
+>
+> Description: A toolset for 3D reconstruction and analysis of excavations. It provides methods to reconstruct natural and artificial surfaces based on field measurements. This allows to **spatially contextualize documented subunits and features**. Intended to be part of a 3D visualization workflow.
+> 
+> ...
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.55]{images/history.png}
+\caption{Timeline recexcavAAR}
+\end{figure}
+
+## recexcavAAR
+
 \underline{recexcavAAR auf Github -- Entwicklungsumgebung}  
 https://github.com/ISAAKiel/recexcavAAR
 
@@ -353,20 +367,6 @@ https://github.com/ISAAKiel/recexcavAAR
 https://CRAN.R-project.org/package=recexcavAAR
 
 \rule{\textwidth}{1pt}
-
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.6]{images/history.png}
-\caption{Timeline recexcavAAR}
-\end{figure}
-
-## recexcavAAR
-
-> ...
->
-> Description: A toolset for 3D reconstruction and analysis of excavations. It provides methods to reconstruct natural and artificial surfaces based on field measurements. This allows to **spatially contextualize documented subunits and features**. Intended to be part of a 3D visualization workflow.
-> 
-> ...
 
 **Vignettes** (Mai 2017)
 
@@ -381,7 +381,8 @@ https://CRAN.R-project.org/package=recexcavAAR
 
 ## recexcavAAR
 
-\textcolor{red}{\textbf{1.}} Paket \textbf{recexcavAAR} als Voraussetzung des Pakets definieren
+\textcolor{red}{\textbf{1.}} Paket \textbf{recexcavAAR} als Voraussetzung des Pakets definieren \newline 
+(... \keys{\ctrl + \shift + B})
 
 ```{}
 Imports:
@@ -390,7 +391,7 @@ Suggests:
   recexcavAAR (>= 0.3.0)
 ```
 
-\textcolor{black}{\textbf{2.}} Kriging und Positionsbestimmung im Dokument hinzufügen
+\textcolor{black}{\textbf{2.}} Kriging und Positionsbestimmung im RMarkdown Dokument hinzufügen
 
 `` ```{r} ``
 ```{r, eval=FALSE}
@@ -572,7 +573,7 @@ g + geom_abline(
 
 ## Abschließende Gedanken
 
-* \danger\  Das ist **kein** produktionsfertiges R-Paket. Wir haben einige essenzielle Aspekte ausgelassen: 
+* \danger\  Das ist **kein** produktionsfertiges R-Paket. Wir haben einige essenzielle Aspekte ausgelassen: \keys{\ctrl + \shift + E}
     * Dokumentation! (z.B. mit roxygen2)
     * Versionskontrolle (z.B. mit git)
     * korrekte Datenimplementierung
