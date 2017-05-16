@@ -118,7 +118,7 @@ library(expack)
 \textcolor{black}{\textbf{5.}} Fleischbeschau!
 
 ```{r, eval=FALSE}
-help(package="expack")
+help(package = "expack")
 ```
 
 \textcolor{black}{\textbf{6.}} Beispieldaten ansehen
@@ -276,7 +276,7 @@ devtools::use_vignette("recex")
 \textcolor{black}{\textbf{2.}} Dokument testweise rendern: \keys{\ctrl + \shift + K} 
 
 ```{r, eval=FALSE}
-rmarkdown::render("~expack/.../recex.Rmd")
+rmarkdown::render("~/expack/.../recex.Rmd")
 ```
 
 \textcolor{black}{\textbf{3.}} Inhalt abgesehen vom Header (zwischen `---`) löschen
