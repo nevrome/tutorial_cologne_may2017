@@ -54,7 +54,7 @@ A step to help you slow down - put your fork/spoon down between bites and take a
 \underline{R Development Core Team -- Writing R Extensions}  
 https://cran.r-project.org/doc/manuals/r-release/R-exts.pdf
 
-\underline{\textbf{Hadley Wickham -- R packages}}  
+\underline{Hadley Wickham -- \textbf{R packages}}  
 http://r-pkgs.had.co.nz/
 
 \rule{\textwidth}{1pt}
@@ -140,7 +140,7 @@ install.packages(c("recexcavAAR", "rgl", "tidyverse"))
 ## 3D plots in R
 
 \underline{JavaScript APIs: \textbf{plotly} \& \textbf{rthreejs}}  
-https://plot.ly/r/#3d-charts & https://github.com/bwlewis/rthreejs
+https://plot.ly/r/#3d-charts \newline    https://github.com/bwlewis/rthreejs
 
 \underline{OpenGL API: \textbf{rgl}}  
 https://cran.r-project.org/web/packages/rgl/vignettes/rgl.html
@@ -352,15 +352,11 @@ https://github.com/ISAAKiel/recexcavAAR
 \underline{recexcavAAR auf CRAN}  
 https://CRAN.R-project.org/package=recexcavAAR
 
-> ...
->
-> Title: 3D Reconstruction of Archaeological Excavations
->
-> ...
+\rule{\textwidth}{1pt}
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.52]{images/history.png}
+\includegraphics[scale=0.6]{images/history.png}
 \caption{Timeline recexcavAAR}
 \end{figure}
 
@@ -434,10 +430,18 @@ rglwidget()
 
 ## tidyverse
 
-\underline{\textbf{Hadley Wickham -- R for Data Science}}  
+\columnsbegin
+\column{0.5\textwidth}
+
+\underline{Hadley Wickham -- \textbf{R for Data Science}}  
 http://r4ds.had.co.nz/
 
-http://tidyverse.org/
+\column{0.5\textwidth}
+
+\underline{Winston Chang -- \textbf{R Graphics Cookbook}}  
+http://www.cookbook-r.com/Graphs/
+
+\columnsend
 
 \rule{\textwidth}{1pt}
 
