@@ -34,4 +34,4 @@ vignettes/*.pdf
 .Rproj.user
 
 # rendered files
-*.pdf
+*.html
