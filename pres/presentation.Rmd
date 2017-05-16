@@ -130,7 +130,7 @@ trench
 \textcolor{black}{\textbf{7.}} On a completely different note... Pakete installieren
 
 ```{r, eval=FALSE}
-install.packages(c("recexcavAAR", "rgl", "tidyverse"))
+install.packages(c("rgl", "recexcavAAR", "magrittr", "tidyverse"))
 ```
 
 
@@ -454,7 +454,7 @@ Das tidyverse ist eine **Sammlung von auf einander angepassten Paketen** für **
 |**tidyr:**   | Datenlayout bereinigen |
 |**readr:**   | Daten einlesen (read.table 2.0 **?**) |
 |**dplyr:**   | Daten verarbeiten -> Perspektive data.frame |
-|**purrr:**   | Daten verarbeiten -> Perspektive vektor |
+|**purrr:**   | Daten verarbeiten -> Perspektive list + vector |
 
 Speziellere Pakete, die der selben Philosophie folgen: forcats, stringr, readxl, ...
 
@@ -475,12 +475,98 @@ devtools::use_build_ignore("playground/sherds.R")
 ```{r, eval=FALSE}
 library(expack)
 library(recexcavAAR)
+library(magrittr)
+library(tidyverse)
 
 surf <- recexcavAAR::kriglist(
   list(nivellement1, nivellement2), lags = 2
-)
+  )
 sherds_pos <- recexcavAAR::posdec(sherds[1:3], surf)
 ```
+
+\textcolor{black}{\textbf{4.}} Let's play together: R.
+
+## tidyverse -- Anzahl \textasciitilde\ Position
+
+```{r, eval=FALSE}
+sherds_main <- sherds %>%
+  dplyr::mutate(pos = sherds_pos$pos) %>%
+  dplyr::mutate(
+    pos = replace(pos, pos == 0, "couche_rouge"),
+    pos = replace(pos, pos == 1, "sec._loess"),
+    pos = replace(pos, pos == 2, "plough_horizon")
+  )
+```
+
+```{r, eval=FALSE}
+stratigraphy <- c("plough_horizon", "sec._loess", "couche_rouge")
+sherds_main$pos <- factor(sherds_main$pos, stratigraphy)
+
+```
+
+```{r, eval=FALSE}
+sherds_main %>% ggplot() +
+  geom_bar(aes(x = pos))
+```
+
+```{r, eval=FALSE}
+sherds_main %>%
+  dplyr::group_by(pos) %>%
+  dplyr::summarise(count = n()) %>%
+  dplyr::mutate(percentage = (count / sum(count) * 100) %>% round(0))
+```
+
+## tidyverse -- Anzahl \textasciitilde\ Dekoration
+
+```{r, eval=FALSE}
+sherds_main %>% ggplot() +
+  geom_bar(aes(x = decoration)) +
+  facet_grid(~pos) +
+  theme(axis.text.x = element_text(
+    angle = 30, hjust = 1, vjust = 1)
+  )
+```
+
+```{r, eval=FALSE}
+sherds_main <- sherds_main %>%
+  tidyr::separate(
+    decoration,
+    into = c("deco", "deco_comment"), sep = ";",
+    remove = FALSE
+  )
+```
+
+```{r, eval=FALSE}
+sherds_main %>% ggplot() +
+  geom_bar(aes(x = deco)) +
+  facet_grid(~pos)
+```
+
+## tidyverse -- Wandstärke \textasciitilde\ Durchmesser + Position
+
+```{r, eval=FALSE}
+g <- sherds_main %>% ggplot() +
+  geom_point(aes(x = size, y = w_thick)) +
+  facet_grid(~pos)
+```
+
+```{r, eval=FALSE}
+models <- sherds_main %>%
+  base::split(.$pos) %>%
+  purrr::map(~lm(w_thick ~ size, data = .)) %>%
+  purrr::map(~coef(.)) %>%
+  as.data.frame %>% t %>% data.frame %>%
+  dplyr::mutate(pos = factor(rownames(.), stratigraphy))
+```
+
+```{r, eval=FALSE}
+g + geom_abline(
+    data = models,
+    aes(intercept = X.Intercept., slope = size)
+  )
+```
+
+
 
 # Abschließende Gedanken
 
