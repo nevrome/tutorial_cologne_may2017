@@ -91,6 +91,7 @@ library(expack)
 \textcolor{red}{\textbf{1.}} Paket anlegen
 
 ```{r, eval=FALSE}
+install.packages("devtools")
 devtools::create("~/expack")
 ```
 
