@@ -30,7 +30,7 @@ fig_caption: yes
 \column{0.5\textwidth}
 
 \begin{itemize}
-  \item R Pakete
+  \item R Pakete \textcolor{black}{\faListOl}\ \textcolor{red}{\faListOl}
   \item 3D plots in R
   \item Reports
   \item recexcavAAR
