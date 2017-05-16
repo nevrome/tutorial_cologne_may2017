@@ -208,10 +208,10 @@ coolplot(sherds, type = "p", add = TRUE)
 
 ```{r, eval=FALSE}
 coolpicture <- function(image, position) {
-  rgl::show2d( { par(mar = rep(0, 4))
-                 plot( 0:1, 0:1, type = "n", ann = FALSE,
-                       axes = FALSE, xaxs = "i", yaxs = "i" )
-                 rasterImage(image, 0, 0, 1, 1)
+  rgl::show2d( { graphics::par(mar = rep(0, 4))
+                 graphics::plot( 0:1, 0:1, type = "n", ann = FALSE,
+                                 axes = FALSE, xaxs = "i", yaxs = "i" )
+                 graphics::rasterImage(image, 0, 0, 1, 1)
                 },
     x = position[, 1], y = position[, 2], z = position[, 3]
   )
